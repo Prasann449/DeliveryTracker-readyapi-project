@@ -11,7 +11,7 @@
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>https://qa1.datacache.api.tirehub.com</con:endpoint>
+        <con:endpoint>https://qa.datacache.api.tirehub.com</con:endpoint>
         <con:request/>
         <con:originalUri>https://qa.datacache.api.tirehub.com/api/cache/getdeliverytracker</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="7ab8a8a2-187c-42c1-9670-b2635f40bd49" name="Valid HTTP Status Codes">
