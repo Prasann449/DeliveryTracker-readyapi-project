@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="11ae9ed4-117b-4c12-90cd-c76919fe9dcc" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Delivery_TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="11ae9ed4-117b-4c12-90cd-c76919fe9dccfileName">Delivery_TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="1522e5bb-2fe5-4e4e-a0bc-67b4631a4a42">
+    <con:settings/>
+    <con:config service="https://qa.datacache.api.tirehub.com" methodName="Getdeliverytracker" resourcePath="/api/cache/getdeliverytracker" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="003ea70a-49a7-46cd-9a8f-8a02f7ffa1f8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa.datacache.api.tirehub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://qa.datacache.api.tirehub.com/api/cache/getdeliverytracker</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="3b665503-3700-48bf-8ff2-f39c741d1546" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="53f1cd66-6ca1-4efb-bf2b-a0b8ec15eb5c" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
