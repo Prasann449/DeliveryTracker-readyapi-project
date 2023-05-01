@@ -5,6 +5,6 @@
   </con:settings>
   <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
-    <con:endpoint>https://qa.datacache.api.tirehub.com</con:endpoint>
+    <con:endpoint>https://qa1.datacache.api.tirehub.com</con:endpoint>
   </con:endpoints>
 </con:interface>
