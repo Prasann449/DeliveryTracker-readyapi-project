@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="f782f80a-97fc-4752-83a8-e6e2a11cb023fileName">DeliveryTracker-readyapi-project</con:setting>
   </con:settings>
+  <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
