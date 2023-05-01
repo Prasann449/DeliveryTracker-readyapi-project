@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3d2a0bf7-ca26-408a-928d-0a75c1576084" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Delivery" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3d2a0bf7-ca26-408a-928d-0a75c1576084fileName">Delivery</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="23813794-8474-49af-9513-392a1bbe4152">
+    <con:settings/>
+    <con:config service="https://qa.datacache.api.tirehub.com" methodName="Getdeliverytracker" resourcePath="/api/cache/getdeliverytracker" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="3d9732c9-f7bd-4d09-b309-3ddfac047c46" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa.datacache.api.tirehub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://qa.datacache.api.tirehub.com/api/cache/getdeliverytracker</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="7ab8a8a2-187c-42c1-9670-b2635f40bd49" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="009583f3-3cc8-4b82-ad38-1c4c85d3a941" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="fe86b1ac-a3e4-4d83-a981-96f8176bf065" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://qa.datacache.api.tirehub.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fe86b1ac-a3e4-4d83-a981-96f8176bf065fileName">https%3A%2F%2Fqa.datacache.api.tirehub.com</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>https://qa.datacache.api.tirehub.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

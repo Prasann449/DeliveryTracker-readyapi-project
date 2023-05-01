@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Getdeliverytracker" path="/api/cache/getdeliverytracker" id="51cd0fff-e9dc-463f-b0ba-91463f27b11b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="51cd0fff-e9dc-463f-b0ba-91463f27b11bfileName">Getdeliverytracker</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Getdeliverytracker" id="36227f0d-2cae-4f53-9521-fd1e823aad0d" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>401 404</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="7f21014b-7e8a-46c5-8bf8-9491da1293e6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://qa.datacache.api.tirehub.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
